@@ -237,6 +237,17 @@
             if (overlay) {
                 overlay.addEventListener('click', toggleMobileMenu);
             }
+
+            // Close the mobile menu when a navigation link is clicked on small screens
+            const navLinks = nav.querySelectorAll('a');
+            navLinks.forEach(function(link) {
+                link.addEventListener('click', function() {
+                    // If the menu is open, close it after clicking a link
+                    if (nav.classList.contains('open')) {
+                        toggleMobileMenu();
+                    }
+                });
+            });
         });
     </script>
 
