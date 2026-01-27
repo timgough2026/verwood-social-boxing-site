@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verwood Social Boxing Club</title>
+    <!-- Google Font for friendly typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">Verwood Social Boxing Club</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#classes">Classes</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#book" class="cta-nav">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Get Fit, Have Fun</h1>
+            <p>Friendly social boxing classes in Verwood for all levels and ages.</p>
+            <a href="#book" class="btn-primary">Try a Free Trial</a>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Verwood Social Boxing Club is a community‑focused fitness project designed to help people of all ages and abilities discover the benefits of boxing in a friendly, non‑competitive environment. Our classes combine cardio, strength, and coordination drills with social interaction and fun. You won’t spar unless you want to – our focus is on fitness, confidence and camaraderie.</p>
+        </div>
+    </section>
+
+    <!-- Classes section -->
+    <section id="classes" class="section light-bg">
+        <div class="container">
+            <h2>Our Classes</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Social Boxing</h3>
+                    <p>A dynamic group workout featuring pad work, footwork drills and bodyweight exercises. Perfect for beginners and those looking to have fun and get fit.</p>
+                </div>
+                <div class="card">
+                    <h3>Youth BoxFit</h3>
+                    <p>Engaging sessions for ages 10–16 that build confidence, discipline and coordination. Focused on technique and fitness without full contact sparring.</p>
+                </div>
+                <div class="card">
+                    <h3>Outdoor Bootcamps</h3>
+                    <p>Spring and summer bootcamps held in Verwood’s parks. High‑energy sessions combining boxing drills with functional strength and agility circuits.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing section -->
+    <section id="pricing" class="section">
+        <div class="container">
+            <h2>Pricing</h2>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>Drop‑In</h3>
+                    <p class="price">£10 per class</p>
+                    <ul>
+                        <li>Attend any class</li>
+                        <li>No commitment</li>
+                        <li>All equipment provided</li>
+                    </ul>
+                </div>
+                <div class="price-card highlighted">
+                    <h3>Monthly Membership</h3>
+                    <p class="price">£35 per month</p>
+                    <ul>
+                        <li>Unlimited classes</li>
+                        <li>Priority booking</li>
+                        <li>Bring a friend for free once a month</li>
+                    </ul>
+                </div>
+                <div class="price-card">
+                    <h3>5‑Class Pack</h3>
+                    <p class="price">£40 per pack</p>
+                    <ul>
+                        <li>Save on drop‑in rates</li>
+                        <li>Valid for 3 months</li>
+                        <li>Great for occasional training</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="small-note">Need personal coaching or corporate sessions? <a href="#contact">Contact us</a> for custom quotes.</p>
+        </div>
+    </section>
+
+    <!-- Schedule section -->
+    <section id="schedule" class="section light-bg">
+        <div class="container">
+            <h2>Class Schedule</h2>
+            <p>Classes start in March 2026. Outdoor sessions take advantage of Verwood’s parks and community spaces during spring and summer. Here’s our initial weekly schedule:</p>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Time</th>
+                        <th>Location</th>
+                        <th>Class Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>18:00 – 19:00</td>
+                        <td>Verwood Memorial Hall</td>
+                        <td>Social Boxing</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>18:00 – 19:00</td>
+                        <td>Potterne Park Pavilion</td>
+                        <td>Social Boxing</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>17:30 – 18:30</td>
+                        <td>Potterne Park (outdoors)</td>
+                        <td>Outdoor Bootcamp</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>10:00 – 11:00</td>
+                        <td>Verwood Memorial Hall</td>
+                        <td>Youth BoxFit</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Booking section -->
+    <section id="book" class="section">
+        <div class="container">
+            <h2>Book Your Class</h2>
+            <p>Fill in the form below to reserve your spot. We’ll confirm your booking via email.</p>
+            <form class="booking-form" action="mailto:info@verwoodsocialboxing.com" method="POST" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="class">Preferred Class</label>
+                    <select id="class" name="class">
+                        <option value="Social Boxing">Social Boxing</option>
+                        <option value="Youth BoxFit">Youth BoxFit</option>
+                        <option value="Outdoor Bootcamp">Outdoor Bootcamp</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message / Questions</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Send Booking Request</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="section light-bg">
+        <div class="container">
+            <h2>Contact & Location</h2>
+            <p>If you have any questions, want to host a private session or collaborate, please get in touch.</p>
+            <ul class="contact-list">
+                <li>Email: <a href="mailto:info@verwoodsocialboxing.com">info@verwoodsocialboxing.com</a></li>
+                <li>Phone: 01234 567890</li>
+                <li>Locations: Verwood Memorial Hall (Ringwood Road, Verwood) and Potterne Park Pavilion</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2026 Verwood Social Boxing Club. All rights reserved.</p>
+            <div class="social-links">
+                <!-- Placeholder social icons; user can replace with their own links -->
+                <a href="#" aria-label="Facebook">FB</a>
+                <a href="#" aria-label="Instagram">IG</a>
+                <a href="#" aria-label="Twitter">TW</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
