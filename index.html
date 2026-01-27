@@ -33,6 +33,9 @@
         </div>
     </header>
 
+    <!-- Overlay for mobile navigation side drawer -->
+    <div class="mobile-overlay"></div>
+
     <!-- Hero section -->
     <section id="home" class="hero">
         <div class="hero-overlay"></div>
@@ -219,12 +222,20 @@
         // Toggle the navigation links on mobile when the hamburger is clicked
         document.addEventListener('DOMContentLoaded', function() {
             const hamburger = document.querySelector('.hamburger');
-            const navLinks = document.querySelector('.nav-links');
+            const nav = document.querySelector('nav');
+            const overlay = document.querySelector('.mobile-overlay');
+
+            function toggleMobileMenu() {
+                nav.classList.toggle('open');
+                hamburger.classList.toggle('open');
+                overlay.classList.toggle('open');
+            }
+
             if (hamburger) {
-                hamburger.addEventListener('click', () => {
-                    navLinks.classList.toggle('open');
-                    hamburger.classList.toggle('open');
-                });
+                hamburger.addEventListener('click', toggleMobileMenu);
+            }
+            if (overlay) {
+                overlay.addEventListener('click', toggleMobileMenu);
             }
         });
     </script>
