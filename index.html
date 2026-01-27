@@ -13,6 +13,12 @@
     <header>
         <div class="container nav-container">
             <div class="logo">Verwood Social Boxing Club</div>
+            <!-- Hamburger button for mobile navigation -->
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <nav>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
@@ -207,6 +213,21 @@
             </div>
         </div>
     </footer>
+
+    <!-- Mobile navigation toggle script -->
+    <script>
+        // Toggle the navigation links on mobile when the hamburger is clicked
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+            if (hamburger) {
+                hamburger.addEventListener('click', () => {
+                    navLinks.classList.toggle('open');
+                    hamburger.classList.toggle('open');
+                });
+            }
+        });
+    </script>
 
 </body>
 </html>
