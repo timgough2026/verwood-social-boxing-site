@@ -50,6 +50,12 @@ header {
     font-size: 1.3rem;
 }
 
+/* Ensure the logo image scales appropriately */
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
 .nav-links {
     list-style: none;
     display: flex;
