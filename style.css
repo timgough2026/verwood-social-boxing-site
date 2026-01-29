@@ -396,6 +396,75 @@ header {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Upcoming sessions section */
+.upcoming-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.upcoming-card {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 280px;
+    max-width: 350px;
+}
+
+/* Tutorials section */
+.tutorial-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.tutorial-card {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 280px;
+    max-width: 350px;
+}
+
+/* Accreditation course */
+.accreditation-steps {
+    list-style: none;
+    counter-reset: step-counter;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding-left: 0;
+}
+.accreditation-steps li {
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-left: 2.5rem;
+}
+.accreditation-steps li::before {
+    counter-increment: step-counter;
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-weight: 700;
+    text-align: center;
+}
+.accreditation-note {
+    max-width: 800px;
+    margin: 1rem auto 0;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
 /* About section styling */
 .about-container {
     display: flex;
