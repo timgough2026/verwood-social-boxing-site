@@ -115,8 +115,8 @@ header {
 .hero {
     position: relative;
     height: 85vh;
-    /* Use a personal action shot for the hero background */
     /* Set a group photo as the hero background */
+    /* Use boxing8.jpg which features a dynamic group session at dusk */
     background: url('images/boxing8.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
