@@ -52,7 +52,8 @@ header {
 
 /* Ensure the logo image scales appropriately */
 .logo img {
-    height: 40px;
+    /* Larger logo on desktop */
+    height: 50px;
     width: auto;
 }
 
@@ -542,6 +543,11 @@ footer {
     /* Show hamburger on mobile */
     .hamburger {
         display: flex;
+    }
+
+    /* Reduce logo size on mobile */
+    .logo img {
+        height: 35px;
     }
     /* Side-drawer navigation */
     nav {
